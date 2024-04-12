@@ -1,5 +1,135 @@
+body{
+    background-color: silver;
+    margin: 0;
+    padding: 0;
+}
+ 
+#container{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    z-index: 0;
+}
+ 
 header{
     background-color: slategray;
-    text-align: center;
     color: white;
+    text-align: center;
+    padding: 5px;
+}
+ 
+footer{
+    background-color: black;
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 70%;
+    padding: 6px;
+ 
+}
+ 
+nav {
+    background-color: white;
+    padding: 6px;
+}
+li{
+    color: black;
+}
+ 
+#tartalom{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; 
+    min-height: 150px;
+    width: 100%;
+}
+#tartalom2{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; 
+    min-height: 150px;
+    width: 100%;
+}
+ 
+.rész{
+    width: auto;
+    padding: 6px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 10px;
+ 
+}
+ 
+ 
+ 
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ 
+.menu li{
+    display: inline-block;
+   
+}
+ 
+.menu li a{
+    display: block;
+    color: black;
+    padding: 5px 20px;
+    text-decoration: none;
+    cursor: pointer;    
+}
+ 
+.menu li a:hover{
+    background-color: rgb(82, 90, 90);
+    color: white;
+}
+#tartalom div p, #tartalom2 div p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.rész{
+    background-color: white;
+}
+#tartalom, #tartalom2{
+    padding: 5px;
+}
+.kisrész{
+    color: white;
+}
+ 
+@media screen and (max-width: 970px){
+    #tartalom, #tartalom2{
+        flex-direction: column;
+    }
+ 
+    .rész{
+        width: auto;
+    }
+ 
+    #center{
+        flex-grow: 1;
+    }
+ 
+ 
+    .menu li{
+        display: block;
+        border-right: none;
+    }
+ 
+    .menu li:last-child{
+        border-bottom: none;
+    }
+ 
+    .menu li a{
+        padding: 10px;
+    }
+ 
+    header h1{
+        font-size: 150%;
+    }
 }
